@@ -6,7 +6,10 @@ import subprocess
 import sys
 
 
-__wikiextractor_cmd = os.path.normpath('./wikiextractor/WikiExtractor.py')
+__src_dir = os.path.dirname(os.path.abspath(__file__))
+__wikiextractor_path = os.path.normpath('wikiextractor/WikiExtractor.py')
+__wikiextractor_cmd = os.path.join(__src_dir, '..', __wikiextractor_path)
+__wikiextractor_cmd = os.path.normpath(__wikiextractor_cmd)
 
 
 def download_dump(file_path, url):
