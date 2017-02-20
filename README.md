@@ -48,7 +48,7 @@ Another example to specify hyper parameters.
 
 ```
 . .env/bin/activate
-./build -o /output/another.model --build-gensim-model --size=50 --window=10 --min-count=5
+./build -o output/another.model --build-gensim-model --size=50 --window=10 --min-count=5
 ```
 
 How to use the model
